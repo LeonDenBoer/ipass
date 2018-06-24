@@ -1,0 +1,305 @@
+/*
+author: Léon den Boer
+*/
+
+/*algemeen*/
+body{
+    padding:0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+a,a:visited{
+    color: black;
+    text-decoration: unset;
+    font-family: sans-serif;
+}
+p{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: unset;
+    margin: unset;
+}
+img{
+    width: 100%;
+    height: unset;;
+}
+.clearfix{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+/*header*/
+header {
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0 rgba(0,0,0,.3);
+}
+div#logo {
+    float: left;
+    width: 300px;
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    padding-top: 16px;
+}
+nav li {
+    float: left;
+    padding: 0px 27px;
+    font-size: 23px;
+    border-right: 1px solid #e60000;
+    height: 29px;
+}
+nav li:last-of-type{
+    border-right: unset;
+}
+nav li a:after {
+    width: 0%;
+    content: "";
+    display: inline-block;
+    transition: width 0.3s;
+}
+nav li a:hover:after{
+    width: 100%;
+    border-bottom: 3px solid #e60000;
+}
+nav li:hover a{
+    color:#e60000;
+}
+/*login*/
+#inlog {
+    width: 22%;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+#nieuwe_gebruiker label {
+    float: left;
+    margin-top: 8px;
+}
+#nieuwe_gebruiker input {
+    float: right;
+    margin-top: 5px;
+}
+
+#nieuwe_gebruiker {
+    width: 22%;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+}
+#inlog label {
+    float: left;
+    margin-top: 8px;
+}
+#inlog input {
+    float: right;
+    margin-top: 5px;
+}
+#orca-logo {
+    width: 27%;
+    margin: 50px auto;
+}
+
+
+
+/*home*/
+#background-image {
+    width: 100%;
+    height: calc(100vh - 101px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+#overlay {
+    position: absolute;
+    top: 101px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgba(0,0,0,.35);
+}
+#table-inner {
+    color: white;
+    padding-left: 8%;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    z-index: 1;
+    display: table-cell;
+    vertical-align: middle;
+}
+#table-inner h5 {
+    font-size: 22px;
+    margin-top: 40px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: 46%;
+}
+#table-inner h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+/*ploeg*/
+#ploeg-naam {
+    text-align: center;
+    margin-top: 30px;
+}
+div#ploeg-genoten {
+    width: 70%;
+    margin: 21px auto 0px;
+}
+#ploeg-genoten div {
+    float: left;
+    width: 33%;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    
+}
+#ploeg-genoten:after{
+    content:"";
+    clear: both;
+    display: table;
+
+}
+form#t {
+    float: left;
+    width: 20%;
+    border: 1px solid;
+    padding: 20px;
+    margin-left: 30%;
+    font-weight: 400;
+    margin-top: 90px;
+    font-size: 17px;
+}
+form#v {
+    float: right;
+    border: 1px solid;
+    padding: 40px;
+    margin-right: 30%;
+    font-weight: 400;
+    margin-top: 90px;
+    font-size: 17px;
+}
+
+
+/*voortgang*/
+#canvas{
+    width: 71vh;
+    float: right;
+    margin-right: 170px;
+}
+#content{
+    margin-top: 50px;
+}
+select {
+    width: 100px;
+    float: right;
+}
+#filter {
+    width: 300px;
+    float: left;
+}
+/* wedstrijden*/
+.wedstrijd {
+    width: 60%;
+    margin: 15px auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+.datum {
+    float: left;
+    margin-right: 50px;
+}
+.afstand{
+    float: left;
+    margin-right: 50px;
+}
+.tijd{
+    float: left;
+}
+.wedstrijd button{
+    float: right;
+    margin-right: 100px;
+    padding: 4px;
+}
+#nieuwewedstrijd {
+    width: 60%;
+    margin: 17px auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#datum{
+    width: 148px;
+}
+#afstand{
+    width: 74px;
+}
+#form-top{
+    margin-bottom: 20px;
+}
+#form-top label:last-of-type{
+    margin-left: 40px;
+    margin-right: 11px;
+}
+#form-down input[type="number"]{
+    width: 30px;
+    margin-left: -3px;
+}
+
+
+#form-down label:first-of-type{
+    margin-right: 29px;
+}
+#form-down label:last-of-type{
+    margin-left: 40px;
+}
+#form-down select{
+    float: unset;
+    width: 78px;
+}
+#form-down input[type="button"]{
+    float: right;
+}
+.soort{
+    text-align: center;
+
+}
+.soort:first-of-type{
+    margin-top: 20px;
+}
+
+#filter {
+    width: 300px;
+    float: left;
+    margin-left: 100px;
+    border: 1px solid black;
+    padding: 20px;
+}
+#filter label {
+    float: left;
+    margin-top: 8px;
+    width: 152px;
+}
+#filter select {
+    float: right;
+    margin-top: 5px;
+    width: 100px;
+}
+#filter input {
+    float: right;
+    margin-top: 5px;
+}

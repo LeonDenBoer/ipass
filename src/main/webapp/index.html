@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Index</title>
+ 	</head>
+ 	<body>
+		<div id="orca-logo">
+				<img src="http://nieuw.orcaroeien.nl/files/2016/08/cropped-ausrorca.png">
+		</div>
+
+			<form id="inlog">
+				<label>email:</label> <input required type="text" name="email">
+				<label>wachtwoord: </label><input required type="password" name="wachtwoord">
+				<input type="button" onclick="login(this.form)" value="Inloggen">
+				<div class="clearfix"></div>
+			  </form>
+
+
+
+
+
+
+
+			  <form id="nieuwe_gebruiker">
+					<label>voornaam: </label><input required type="text" id="voornaam" name="voornaam">
+					<label>achternaam: </label><input required type="text" id="achternaam" name="achternaam">
+					<label>email: </label><input required type="email" id="email" name="email">
+					<label>wachtwoord: </label><input required type="password" id="wachtwoord" name="wachtwoord">
+					<input type="button" onclick="nieuwegebruiker()" value="account aanmaken">
+					<div class="clearfix"></div>
+				  </form>
+ 	</body>
+ 	
+ 	
+ 	<script src="inloggen.js">
+		 
+		
+
+
+ 	</script>
+ </html>

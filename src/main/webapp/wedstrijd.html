@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="ingelogd.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Index</title>
+ 	</head>
+ 	<body>
+		<header>
+			<div id="logo">
+				<a href="home.html">
+					<img src="http://nieuw.orcaroeien.nl/files/2016/08/cropped-ausrorca.png">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="voortgang.html">Voortgang</a>
+					</li>
+					<li>
+						<a href="ploeg.html">Ploeg</a>
+					</li>
+					<li>
+						<a class="active" href="wedstrijd.html">Wedstrijden</a>
+					</li>
+					<li>
+						<a href="uitloggen.html">Uitloggen</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+		</header>
+		<div id="afstanden">
+				<div class="soort">
+						<h1>nieuwe wedstrijd toevoegen</h1>
+					</div>
+			<form id="nieuwewedstrijd">
+				<div id="form-top">
+					<label>Datum: </label><input type="date" name="datum" id="datum">
+					<label>afstand: </label><input type="number" id="afstand" name="afstand" value="0"> meters
+				</div>
+				<div id="form-down">
+					<label>tijd: </label><input max="24" min="0" type="number" name="uur" id="uur" value="0">:
+					<input max="60" min="0" type="number" name="minuut" id="minuut" value="0">:
+					<input max="60" min="0" type="number" name="seconden" id="seconden" value="0">.
+					<input max="99" min="0" type="number" name="mseconden" id="mseconden" value="0">
+					<label>wedstrijd: </label><select id="iswedstrijd">
+						<option value="true">wedstrijd</option>
+						<option value="false">training</option>
+					</select>
+					<input type="button" onclick="nieuwewedstrijd()" value="wedstrijd toevoegen">
+				</div>
+			</form>
+
+
+			<div id="wedstrijden">
+				<div class="soort">
+					<h1>wedstrijden</h1>
+				</div>
+
+			</div>
+			<div id="training">
+				<div class="soort">
+					<h1>trainingen</h1>
+				</div>
+			</div>
+		</div>
+		
+ 	</body>
+ 	
+ 	
+ 	<script src="wedstrijd.js"></script>
+ </html>

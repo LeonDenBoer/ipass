@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="ingelogd.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Index</title>
+ 	</head>
+ 	<body>
+		<header>
+			<div id="logo">
+				<a href="home.html">
+					<img src="http://nieuw.orcaroeien.nl/files/2016/08/cropped-ausrorca.png">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="voortgang.html">Voortgang</a>
+					</li>
+					<li>
+						<a class="active" href="ploeg.html">Ploeg</a>
+					</li>
+					<li>
+						<a href="wedstrijd.html">Wedstrijden</a>
+					</li>
+					<li>
+						<a href="uitloggen.html">Uitloggen</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+        </header>
+        <div id="ploeg-content">
+            <div id="ploeg-naam"></div>
+			<div id="ploeg-genoten"></div>
+		</div>
+		<div id="nieuwe-ploeg">
+			<form>
+				<input type="text" id="nploeg-naam">
+				<input type="button" onclick="aanmaken()" value="aanmaken">
+			</form>
+		</div>
+		<div id="ploeg-keuzes">
+			<div id="toevoegen">
+				<form id="t"><h4>Kies iemand die je wilt toevoegen aan de ploeg</h4><select id="kanidaat"></select><input type="button" onclick="toevoegen()" value="toevoegen"></form>
+			</div>
+			<div id="verlaten">
+				<form id="v"><input type="button" onclick="verlaten()" value="verlaat de ploeg"></form>
+			</div>
+		</div>
+        <script src="ploeg.js"></script>
+    </body>
+
+
+
+</html>

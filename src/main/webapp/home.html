@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="ingelogd.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Index</title>
+ 	</head>
+ 	<body>
+		<header>
+			<div id="logo">
+				<a href="home.html">
+					<img src="http://nieuw.orcaroeien.nl/files/2016/08/cropped-ausrorca.png">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a class="active" href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="voortgang.html">Voortgang</a>
+					</li>
+					<li>
+						<a href="ploeg.html">Ploeg</a>
+					</li>
+					<li>
+						<a href="wedstrijd.html">Wedstrijden</a>
+					</li>
+					<li>
+						<a href="uitloggen.html">Uitloggen</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+		</header>
+		<div id="background-image" style="background-image:url(img/SliderOrcaroeien11.jpg);">
+			<div id="overlay"></div>
+			<div id="table-inner">
+				<h2>Welkom bij Roeiprestaties.</h2>
+				<h5>Met deze website kan jij de voortgang van je ploeg zien door de maanden heen. 
+					Hopelijk geeft dit je extra motivatie om er harder voor te staan om een mooie lijn omlaag te krijgen! 
+					Vul snel je afstanden in die je geroeit hebt en zie hoe je ervoor staat.
+				</h5>
+			</div>
+		</div>
+ 	</body>
+ 	
+ 	
+ 	<script>
+	 console.log(sessionStorage.getItem("sporterID"));
+ 	fetch('api/sporter')
+ 		.then(response => response.json())
+ 		.then(function(myJson){
+
+			for(var i = 0; i < myJson.length; i++)
+			var object = myJson[i];
+
+			 console.log(myJson);
+ 		
+ 		});
+ 	</script>
+ </html>
